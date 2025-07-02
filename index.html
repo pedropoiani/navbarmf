@@ -1,0 +1,174 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="icon" href="#">
+      <title>----</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/main.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+   </head>
+
+   <body>
+
+
+<nav class="navbar fixed-top navbar-light bg-light navbar-expand-md">
+  <!-- Logo sempre visível -->
+  <a class="navbar-brand" href="#">
+    <img src="css/img/MF.png" alt="Logo">
+  </a>
+
+  <!-- Botão que aparece em telas < md -->
+  <button class="navbar-toggler" type="button"
+          data-toggle="collapse"
+          data-target="#navbarIcons"
+          aria-controls="navbarIcons"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+    <i class="material-icons">list</i>
+  </button>
+
+  <!-- Grupo de botões colapsável -->
+  <div class="collapse navbar-collapse justify-content-center" id="navbarIcons">
+    <div class="btn-group selectors" role="group" aria-label="Navbar Icons">
+      <button id="pedido_b" type="button" class="btn btn-light button-active">
+        <div class="selector-holder">
+         <i class="material-icons">computer</i>
+          <span>Pedido</span>
+          <span>Balcão</span>
+        </div>
+      </button>
+       <button id="pedido_o" type="button" class="btn btn-light button-active">
+        <div class="selector-holder">
+         <i class="material-icons">web</i>
+          <span>Pedido</span>
+          <span>Online</span>
+        </div>
+      </button>
+        <button id="links" type="button" class="btn btn-light button-active">
+        <div class="selector-holder">
+         <i class="material-icons">link</i>
+          <span>Links</span>
+          <span>Enviados</span>
+        </div>
+      </button>
+         <button id="cards" type="button" class="btn btn-light button-active">
+        <div class="selector-holder">
+         <i class="material-icons">list_alt</i>
+          <span>Pedidos</span>
+          <span>Atuais</span>
+        </div>
+      </button>
+            <button id="lista_pedidos" type="button" class="btn btn-light button-active">
+        <div class="selector-holder">
+         <i class="material-icons">check_circle_outline</i>
+          <span>Pedidos</span>
+          <span>Finalizados</span>
+        </div>
+      </button>
+            <button id="produtos" type="button" class="btn btn-light button-active">
+        <div class="selector-holder">
+         <i class="material-icons">local_florist</i>
+          <span>Produtos</span>
+          <span>Cadastrados</span>
+        </div>
+      </button>
+             <button id="compras" type="button" class="btn btn-light button-active">
+        <div class="selector-holder">
+         <i class="material-icons">shopping_cart_checkout</i>
+          <span>Compras</span>
+          <span>Efetuadas</span>
+        </div>
+      </button>
+         <button id="clientes" type="button" class="btn btn-light button-active">
+        <div class="selector-holder">
+         <i class="material-icons">people</i>
+          <span>Lista de</span>
+          <span>Clientes</span>
+        </div>
+      </button>
+      <button id="pix" type="button" class="btn btn-light button-inactive">
+        <div class="selector-holder">
+          <i class="material-icons">pix</i>
+          <span>Extrato </span>
+          <span>Pix</span>
+        </div>
+      </button>
+         <button id="a_receber" type="button" class="btn btn-light button-inactive">
+        <div class="selector-holder">
+          <i class="material-icons">attach_money</i>
+          <span>Clintes a</span>
+          <span>Receber</span>
+        </div>
+      </button>
+        <button id="ajustes" type="button" class="btn btn-light button-inactive"
+        data-toggle="modal"
+        data-target="#configModal">
+        <div class="selector-holder">
+        <i class="material-icons">settings</i>
+        <span>Ajustes do</span>
+        <span>Sistema</span>
+        </button>
+      <!-- … -->
+    </div>
+  </div>
+</nav>
+   
+
+<!-- Modal de Configurações -->
+<div class="modal fade" id="configModal" tabindex="-1" role="dialog"
+     aria-labelledby="configModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!-- Cabeçalho -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="configModalLabel">Configurações</h5>
+        <button type="button" class="close" data-dismiss="modal"
+                aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <!-- Corpo: lista de ferramentas -->
+      <div class="modal-body">
+        <ul class="list-group">
+          <li class="list-group-item d-flex align-items-center">
+            <i class="material-icons mr-2">graphic_eq</i>
+            Estatísticas
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <i class="material-icons mr-2">people_alt</i>
+            Vendedores
+          </li>
+             <li class="list-group-item d-flex align-items-center">
+            <i class="material-icons mr-2">input</i>
+            Enviar Sugestões
+          </li>
+          <!-- adicione mais itens conforme necessário -->
+        </ul>
+      </div>
+
+      <!-- Rodapé: Fechar e Deslogar -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary"
+                data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-danger" id="logoutBtn">
+          Deslogar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- Bootstrap core JavaScript -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+      <!-- JS needed for this page -->
+      <script src="js/main.js"></script>
+   </body>
+</html>
+
